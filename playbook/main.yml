@@ -1,0 +1,8 @@
+---
+- hosts: vpc
+  become: true
+  tasks:
+  - name: Install apached
+    ansible.builtin.apt:
+     name: apache2
+     update_cache: yes
